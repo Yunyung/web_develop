@@ -1,0 +1,23 @@
+body{
+	background: #EAE1CF;
+}
+
+
+
+.Panel-heading-Account{
+	color: #069;;
+	background: #EAF1F2;
+}
+
+.Panel-heading .Panel-Title{
+	display: inline-block;
+	font-weight: bold;
+}
+
+.Panel-heading .memberInfoEditLink{
+	display: inline-block;
+	float: right;
+	font-size: 0.9rem;
+}
+
+

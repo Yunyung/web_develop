@@ -1,0 +1,97 @@
+<table class="table">
+    <tbody>
+        <tr>
+            <td colspan="2" class="AreaTitleHelp">個人資料</td>
+        </tr>
+        <tr>
+            <td>真實姓名：</td>
+            <td>
+                <input type="text" id="name" name="name" class="form-control form-control-sm" placeholder="姓名">
+            </td>
+        </tr>
+        <tr>
+            <td>用戶帳號</td>
+            <td>
+                <input type="text" id="userAccount" name="userAccount" class="form-control form-control-sm" placeholder="帳號" >
+                <div class="invalid-feedback" id="userAccount-invalid-feedback"></div>
+                <div class="valid-feedback" id="userAccount-valid-feedback"></div>
+                <span class="help-block">※ 您登入此網站所使用的帳號！</span>
+            </td>
+        </tr>
+        <tr>
+            <td>密碼：</td>
+            <td>
+                <input type="checkbox" name="changeUserPassword" id="changeUserPassword"> 重新設定密碼
+                <div id="passwordArea" style="display: none;">
+                    <input type="password" class="form-control form-control-sm" id="userPassword" > 
+                    <div class="invalid-feedback" id="userPassword-invalid-feedback"></div>
+                    <button type="button" class="btn btn-danger movieBtn mt-1" id="btn-changeUserPassword">更改密碼</button>
+                </div>
+                <small id="userPasswordHelp" class="form-text text-muted">
+                ※若要刷新密碼請勾選，並輸入新密碼，密碼將會加密</small>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>性別</td>
+            <td>
+                <input type="radio" name="sex" value="M"> 男
+                <input type="radio" name="sex" value="F"> 女
+            </td>
+        </tr>
+        <tr>
+            <td>出生年月</td>
+            <td colspan="3">
+                <input class="form-control  form-control-sm" type="date" name="dateOfBirth" id="dateOfBirth">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="AreaTitleHelp">聯絡資料</td>
+        </tr>
+        <tr>
+            <td>電子信箱</td>
+            <td>
+                <input type="email" name="Email" id="Email" class="form-control form-control-sm" placeholder="電子信箱">
+                <span class="help-block">※我們將會驗證您的電子信箱，請務必填寫正確。</span>
+            </td>
+        </tr>
+        <tr>
+            <td>行動電話</td>
+            <td>
+                <input type="text" name="mobile" id="mobile" class="form-control form-control-sm" placeholder="主要聯絡方式">
+                <span class="help-block">※ 例: 0929123456</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="AreaTitleHelp">帳號個人訊息</td>
+        </tr>
+        <tr>
+            <td>帳號暱稱</td>
+            <td>
+                <input type="text" name="userNickname" id="userNickname" class="form-control form-control-sm" placeholder="帳號顯示之稱謂">
+            </td>
+        </tr>
+        <tr>
+            <td>權限</td>
+            <td>
+                <select class="form-control" id="rank" name="rank">
+                    <option value="normal">一般用戶</option>
+                    <option value="admin">管理者</option>
+                </select>
+                <span class="help-block">※選擇normal(一般用戶) 或 admin(管理者)</span>
+            </td>
+        <tr>
+        <tr>
+            <td>會員id</td>
+            <td><span id="member_id"></span></td>
+        <tr>
+        <tr>
+            <td>註冊日期</td>
+            <td><span id="signUpDate"></span></td>
+        <tr>
+    </tbody>
+</table>
+<div class="FormErrorMessageArea">
+    <div id="ErrorMessage"></div>
+</div>

@@ -1,0 +1,332 @@
+/**
+ * 所有統一套用的格式檔
+ */
+
+
+
+*{
+    font-family : 微軟正黑體, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html, body{
+    /* 設定html, body高度為100% 拉到視窗可視的大小 */
+    height: 100%;
+}
+
+body.skinBg{
+    background-color: #EEDDBC;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.table td{
+    /* table 預設沒有分隔線 */
+    border: none;
+}
+
+.movieBg{
+    background: url(../img/movieBg.png);
+}
+
+#wrapper{
+    /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+    min-height: 100%;
+    /* 位置設為relative, 作為footer區塊位置的參考 */
+    position: relative;
+}
+
+#contentBanner{
+    padding-top: 60px;
+    padding-bottom: 145px;
+}
+
+.navbar-logo{
+    height          : 60px;
+}
+
+.navbar-logo .navbar-brand{
+    display         : block;
+    text-align      : center;
+    padding         : 0;
+    height          : 60px;
+    width           : 80px;
+}
+.navbar-logo img{
+    height          : 100%;
+}
+
+
+.dusk-navTop{
+    background      : #202020 !important;
+    padding         : 0rem 0rem;
+    font-weight     : 550;
+}
+
+@media (min-width: 992px) {
+    
+    .navbar-nav > li{
+        min-width       : 95px;
+    }
+}
+
+li.nav-item#nav-item-memberArea{
+    width: auto;
+}
+
+li.dropdown div#dropdown-menu-memberArea{
+    width: 100%;
+}
+
+
+.navbar-nav .nav-item > a{
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 100%;
+    height          : 60px;
+    color           : #fff !important;
+
+}
+
+.navbar-nav .li-active{
+    background      : #161616 !important;
+}
+
+.navbar-nav li:hover{
+    background      : #000000;;
+    transition      : all 400ms ease;
+}
+
+
+    /* header 下拉選單設定 */
+    .nav-item .dropdown-menu{
+        top         : 95%;
+        background  : #2b2b2b;
+    }
+    
+
+    .dropdown-menu a{
+        line-height : 30px;
+        color       : #fff !important;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display     : block;
+    }
+
+
+    .dropdown-menu a:hover, .dropdown-menu a:visited{
+        background  : #00c5c9 !important;
+        transition  : all 300ms ease;
+    }
+    /* end 下拉選單 */
+
+/* end pageHeader */
+
+
+
+/* footer */ 
+footer{
+    height          : 100px;
+    position        : absolute;
+    bottom          : 0;
+    width           : 100%;
+    font-size       : 13px;
+    border-top      : 2px solid #222222;
+    background-color: #2b2b2b ; 
+    color           : white;
+}
+
+
+
+footer p{
+    margin          : 0;
+    padding         : 5px 5px;
+}
+
+footer p a {
+    color           : white;
+    text-decoration : none;
+    padding         : 0 0px; 
+}
+/* end footer */
+
+.titleBg{
+    background: url(../img/titleBg.png) no-repeat;
+}
+
+/* 所有Btn用的樣式 */
+div.btnArea{
+    margin-top: 5px;
+    text-align: center;
+}
+
+div.btnArea > a{
+    flex:  1;
+}
+
+
+.movieBtn{
+    color           : white !important;
+    box-shadow      : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius   : 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid #ccc;
+}
+
+.movieBtn:hover{
+    color: white;
+}
+.btn-black{
+    background-color: #333;
+}
+
+.btn-orange{
+    background-color: #D36135;
+}
+
+.btn-orange:hover{
+    background-color: #FF7F50;
+}
+.btn-pink{
+    background-color: #E5384C;
+}
+
+.btn-pink:hover{
+    background-color: #EA1D34;
+}
+
+.btn-blue{
+    background-color: #3b5998;
+}
+
+.btn-blue:hover{
+    background-color: #577ECF;
+}
+
+
+/*
+ *  此網站Form Panel 固定CSS 
+ */
+div.movieFormPanel{
+
+    margin: 100px auto;
+    background: white;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.5);
+    border-radius: 5px;
+    min-width: 40%;
+}
+
+form.movieForm{
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+div.Panel-heading {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #D36135;
+    font-size: 16px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+form .help-block{
+    display: block;
+    color: #737373; 
+}
+
+form .AreaTitleHelp{
+    background-color: #e6dab5;
+    padding: 0.5rem .75rem !important;
+    color: #333333;
+    font-weight: bolder;
+}
+/* 成功後的提示視窗 */
+div.SuccessBlock{
+    display: none;
+    padding: 50px;
+    margin: 0px auto;
+}
+
+div.SuccessBlock > div{
+    display: inline-block;
+}
+
+div.loading{
+    float: left;
+    margin-right: 5px;
+}
+
+div#ErrorMessage {
+    color: red;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/*
+ * modal設定
+ */
+
+.movieModal-dialog{
+    max-width: 900px;
+    width: 70%;
+}
+
+div.modal-dialog div.modal-header{
+    background-color: #D36135; color: white;
+}
+
+/*
+ * icon設定欄位
+ */
+.input-group .input-group-icon{
+    top: 0;
+    padding: 9px 12px;
+    font-size: 16px;
+    color: #555;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+
+.movieRedAlert{
+    color: red;
+    font-weight: bold;
+}
+
+.movieAzureAlert{
+    color: #007FFF;
+    font-weight: bold;
+}
+
+.movieAlizarinCrimsonAlert{
+    color: #E32636;
+    font-weight: bold;
+}
+
+a.link-Top{
+    position: absolute;
+    bottom: 100px;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+    display   :block;
+    background: url(../img/MoveToTop.png);
+    width     : 81px;
+    height    : 45px;
+    display   :block;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+body{
+	background-color: #FDF5E6;
+}
+
+.purchase_list{
+	display: inline-block;
+	/*border-bottom: 2px solid #ff5722;*/
+	font-size: 1.5em;
+	background-color: white;
+	font-family: Microsoft JhengHei;
+	text-align: center;
+	padding-top: 10px;
+	height: 50px;
+}
+
+.shadow{
+	box-shadow:3px 3px 0px 0px #DCDCDC;
+}
+
+.pl_selected{
+	border-bottom: 2px solid #ff5722;
+	color:#ff5722 !important;
+}
+
+.bgc{
+	background-color: white;
+}
+
+.movie_name_font{
+	font-size: 1.05em;
+	font-family: Microsoft JhengHei !important;
+}
+
+.price{
+	color:#ff5722;
+}
+
+.btn-cart{
+	font-size: 1.3em;
+	width: 100%;
+}
+.CartbtnArea{
+	display: flex;
+}
+.CartbtnArea > a{
+	flex: 1;
+}
+
+.trash_can{
+	position: absolute;
+	top: 0px;
+	right: 3px;
+	border-style: none;
+}

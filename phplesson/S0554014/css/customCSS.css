@@ -1,0 +1,138 @@
+/* navbar Top */ 
+#topbar_wrapper .Topbar-title{
+    font-family: Liberation,open sans,trebuchet ms;
+    color: #009900;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.Topbar-title img{
+	width: 60px;
+    height: auto;
+}
+
+.navbarTop{
+	background: #2b2b2b !important;
+	margin-top: 30px;
+}
+
+.navbarTop .nav-item{
+	width: 155px;
+	font-weight: bold;
+}
+
+.navbar-nav li:hover{
+    background: #000000;
+    border-radius: 5px;
+}
+
+.nav-item a{
+	font-family: Liberation,open sans,trebuchet ms;
+	color: #fff !important;
+}
+
+
+.nav-item .dropdown-menu{
+	top: 95%;
+	background: #2b2b2b;
+}
+
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+
+.dropdown-menu a:hover, a:visited{
+	background: #00c5c9;
+}
+/* end Topbar */
+
+
+
+/* language Switcher */
+.langSwitcher{
+	position: absolute;
+	top: 50px;
+	right: 0;
+	height: 50px;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.21);
+}
+
+.langSwitcher button{
+	height: 30px;
+	font-size: 16px;
+    color: #EEBC1E;
+    font-weight: 700;
+    background: white;
+}
+/* end language Switcher*/
+
+.content_wrapper h2{
+	background: cover;
+    background: url(../img/TitleBg.png) repeat ;
+    text-align: center;
+    color: #ff5b0c;
+}
+
+.table-border{
+	border: 2px solid green;
+}
+
+
+
+/* index.php -> System Broadcast Table */
+.System-Broadcast-Table{
+	margin: 30px auto;
+	width: 750px;
+	color: #000000;
+}
+
+.System-Broadcast-Table thead th{
+	color: #222222;
+	text-align: center;
+	border-bottom: 2px solid green;
+	font-weight: bolder;
+}
+
+.System-Broadcast-Table thead .table-Title{
+	background: -webkit-linear-gradient(green, white);
+	background: -o-linear-gradient(green, white);
+	background: -moz-linear-gradient(green, white);
+	background: linear-gradient(green, white);
+}
+
+.System-Broadcast-Table tbody tr{
+	background-color: #c3e6cb;
+	border-bottom: 2px solid grey;
+}
+
+.System-Broadcast-Table tr td:first-child{
+	padding: 0.75rem 0.25rem;
+}
+
+.font-highlight{
+	color: red;
+	font-weight: bold;
+}
+
+.font-red{
+	color: red;
+}
+
+.link-underline{
+	text-decoration: underline;
+}
+/* end System Broadcast Table */
+
+
+
+
+/* footer */
+.footer img{
+	width: 100%;
+}
+/* end footer */
+	

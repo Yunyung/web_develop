@@ -1,0 +1,22 @@
+body{
+	background: #EAE1CF;
+}
+.FormPanel{
+	margin: 20px auto;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0px 5px 5px rgba(0,0,0,.5);
+	width: 100%;
+}
+.Panel-heading {
+	padding: 10px 15px;
+    color: #fff;
+    background-color: #D36135;
+    font-size: 16px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+.card-content{
+	overflow: auto;
+}

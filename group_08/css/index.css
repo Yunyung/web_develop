@@ -1,0 +1,241 @@
+/* slide-area */
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    border: 1px solid #ff5b0c;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background: #ff5b0c;
+}
+
+.slider-arrow{
+    color: #BE653A;
+}
+.carousel-control-next:hover .slider-arrow, .carousel-control-prev:hover .slider-arrow{
+    color: #FF5C00;
+}
+/* /.slide-area */
+
+/* productsRecommend */
+
+.productsRecommend {
+    background: url(../img/movieBg.png);
+    padding-bottom: 100px;
+}
+
+.productsRecommendTitle {
+    background: url(../img/titleBg.png) no-repeat center center;
+    text-align: center;
+    height: 87px;
+    margin: 40px 0;
+}
+
+.productsRecommendTitle h1 {
+    color: #ff5b0c;
+    line-height: 2.3em;
+}
+
+.productsRecommend .HotMovie img {
+    opacity: 0.8;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.productsRecommend .HotMovieRankArea {
+    position: absolute;
+    top: 0;
+    top: -5%;
+    left: -5%;
+}
+
+.HotMovieRankArea .rank{
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    box-shadow     : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-shadow    : 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border         : 1px solid #ccc;
+    width          : 80px;
+    height         : 80px;
+    font-size      : 20px;
+    border-radius  : 40px;
+    font-weight    : 900;
+    background     : #cf3030;
+    color          : white;
+
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);  
+}
+
+.productsRecommend .HotMovieTitle {
+    color: #ea5404;
+}
+
+
+
+/* end productsRecommend */
+
+
+/* wave animation */
+
+.bg_wave {
+    content: "";
+    height: 46px;
+    position: relative;
+    background: url(../img/wave.png) repeat-x;
+    left: 0px;
+    width: 100%;
+    top: -43px;
+
+
+    animation: waveanime 10s linear 1s infinite;
+    -webkit-animation: waveanime 10s linear 1s infinite;
+    -moz-animation: waveanime 10s linear 1s infinite;
+    -webkit-animation-name: 'waveanime';
+    -webkit-animation-duration: 10s;
+    /*動畫時間*/
+    -webkit-animation-timing-function: ease-in-out;
+    /*動畫，和transition-timing-function是一样的*/
+    -webkit-animation-delay: 1s;
+    /*動畫延遲*/
+    -webkit-animation-iteration-count: infinite;
+    /*定義循環資料，infinite为无限次*/
+}
+
+@keyframes waveanime {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 800px 0;
+    }
+}
+
+@-webkit-keyframes waveanime {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 800px 0;
+    }
+}
+
+
+
+/* end wave */
+
+
+/* news */
+
+.newsTitle {
+    width: 100%;
+    text-align: center;
+    height: 87px;
+    margin: 40px 0;
+    background: url(../img/titleBg.png) no-repeat center center;
+}
+
+.newsTitle h1 {
+    color: #ff5b0c;
+    line-height: 2.3em;
+}
+
+
+.newsItem {
+    cursor: pointer;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.newsItem .item-thumb {
+    height: 306px;
+}
+
+.newsItem .item-thumb > a {
+    display: inline-block;
+    height: 100%;
+}
+
+.newsItem .item-thumb a img {
+    width: auto;
+    height: 100%;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition-: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.item-thumb:hover a img {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition-: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    border-radius: 60%;
+}
+
+    /* 橘色圓圈"詳情"字樣呈現 */
+.newsItem .item-thumb .txt-info {
+    position : relative;
+    height   : 100px;
+    width    : 100px;
+    top      : calc(-50% - 50px);
+    margin   : 0 auto;
+    color    : #ffffff;
+    z-index  : -100;
+    font-size: 1.3rem;
+    background: rgba(239, 104, 25, 0.8);
+    border-radius: 50%;
+    
+    -moz-transition   : all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition     : all 0.3s ease-out;
+    transition        : all 0.3s ease-out;
+    -ms-transform     : scale(0, 0);
+    -webkit-transform : scale(0, 0);
+    -moz-transform    : scale(0, 0);
+    -o-transform      : scale(0, 0);
+    transform         : scale(0, 0);
+}
+
+.item-thumb:hover .txt-info {
+    z-index           : 100;
+    -moz-transition   : all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+    -ms-transform     : scale(1, 1);
+    -webkit-transform : scale(1, 1);
+    -moz-transform    : scale(1, 1);
+    -o-transform      : scale(1, 1);
+    transform         : scale(1, 1);
+}
+
+.txt-info a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+    /* end "詳情"文字呈現 */
+
+.newsItem .newsItemTitle a {
+    color: #666666;
+    font-weight: bolder;
+}
+
+/* end news */
+
+
+
+
+

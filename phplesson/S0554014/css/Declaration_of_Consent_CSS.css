@@ -1,0 +1,36 @@
+/* Data provide agree Table */
+.Declaration-of-Consent-Table{
+	margin: 30px auto;
+	width: 750px;
+	color: #000000;
+}
+
+
+.Declaration-of-Consent-Table thead th{
+	color: #222222;
+	text-align: center;
+	border-bottom: 2px solid green;
+	font-weight: bolder;
+}
+
+.Declaration-of-Consent-Table tr td:first-child{
+	padding: 0.75rem 0.25rem;
+}
+
+.Declaration-of-Consent-Table thead .table-Title{
+	background: -webkit-linear-gradient(green, white);
+	background: -o-linear-gradient(green, white);
+	background: -moz-linear-gradient(green, white);
+	background: linear-gradient(green, white);
+}
+
+.Declaration-of-Consent-Table tbody tr{
+	background-color: #ffffff;
+}
+
+.agree-button{
+	display:flex;
+	margin-top: 20px;   
+}
+
+/* end Data provide agree Table */

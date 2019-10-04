@@ -1,0 +1,137 @@
+.micro_black{
+    font-family:Microsoft JhengHei;
+}
+
+/* movieList.php */
+.MovieListTitle{
+    background: url(../img/titleBg.png) no-repeat ;
+    color     : #2f96ee;
+}
+
+div.movieItem:hover{
+    background-color:   #DCDCDC;
+}
+div.item-thumb{
+    position: relative;
+}
+
+div.MovieTypeArea{
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    z-index: 10;
+}
+
+div.MovieTypeArea .rank{
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    box-shadow     : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-shadow    : 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border         : 1px solid #ccc;
+    width          : 70px;
+    height         : 70px;
+    font-size      : 20px;
+    border-radius  : 40px;
+    font-weight    : 900;
+    background     : #cf3030;
+    color          : white;
+
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);  
+}
+
+div.MovieRateArea{
+    font-family: "Microsoft JhengHei",Arial,Helvetica,sans-serif;
+    position: absolute;
+    top: 290px;
+    left: 5%;
+    color: white;
+    z-index: 10;
+
+}
+
+span{
+    box-shadow     : 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-shadow    : 0 -1px 0 rgba(0, 0, 0, 0.25);
+   
+}
+span.general-rate{
+    background-color: #5BB430;
+    border-radius: 5px;
+}
+span.protect-rate{
+    background-color: #00a0e8;
+    border-radius: 5px;
+}
+
+span.teenager-rate{
+    background-color: #e70;
+    border-radius: 5px;
+}
+
+span.Restricted-rate{
+    background-color: #e50011;
+    border-radius: 5px;
+}
+
+
+
+
+
+.theaterCategory{
+    padding              : 3px 5px;
+    margin               : 5px 0 0 5px;
+    line-height          : 1em;
+    min-width            : 29px;
+    text-align           : center;
+    display              : inline-block;
+    color                : #999;
+    font-size            : 14px;
+    border               : 1px solid #999;
+    -webkit-border-radius: 5px;
+    border-radius        : 5px;
+}
+
+div.pageBar{
+    margin: 20px auto;
+
+}
+
+div.pageBar a.btn{
+    border-radius: 0;
+    margin-left: 10px;
+    color: white !important;
+}
+
+/* /.movieList.php */
+
+
+/* movieDetail.php */
+.introduce{
+	display: inline-block;
+}
+
+.slick11{
+    width: 100%;
+}
+
+time{
+    color: #555;
+}
+
+.purchase{
+    font-size: 2em;
+    margin: 0 auto;
+}
+/* movieDetail.php */
+
+
+
+
+ 
+
+

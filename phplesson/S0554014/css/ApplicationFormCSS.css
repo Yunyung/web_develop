@@ -1,0 +1,62 @@
+*{
+	font-size: 1rem;
+}
+
+
+.FormDesign{
+	padding-bottom: 15px;
+	margin: 30px auto;
+	width: 90%;
+	border: 2px solid #1E90FF;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.FormDesign .form-title{
+	margin-bottom: 15px;
+	width: 100%;
+	background: #1E90FF;
+	text-align: center;
+	color: #ffffff;
+	border-bottom: 1px solid blue;
+}
+
+.form-row{
+	margin: 0px;
+	width: 100%;
+}
+
+.form-row legend{
+	font-size: 1rem;
+}
+
+.form-row > div, .form-row > legend{
+	font-size: inherit;
+	display:flex;
+    align-items:center;
+	margin-bottom: 0px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	border-right: 1px solid grey;
+}
+
+.input-text-design{
+	height: 1.8rem;
+}
+
+.form-control-plaintext{
+	font-weight: bolder;
+	text-align: center;
+}
+
+form button{
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#error_message {
+color: #D82424;
+font-weight: normal;
+font-family: "微軟正黑體";
+display: inline;
+padding: 1px;
+}
